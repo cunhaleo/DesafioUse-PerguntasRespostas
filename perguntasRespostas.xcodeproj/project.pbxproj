@@ -7,25 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		90141D6326F65F960096F5BC /* InicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90141D6126F65F960096F5BC /* InicioViewController.swift */; };
+		90141D6426F65F960096F5BC /* InicioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90141D6226F65F960096F5BC /* InicioViewController.xib */; };
+		90141D6926F67C2A0096F5BC /* RespostasCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90141D6726F67C2A0096F5BC /* RespostasCell.swift */; };
+		90141D6A26F67C2A0096F5BC /* RespostasCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90141D6826F67C2A0096F5BC /* RespostasCell.xib */; };
+		90141D6D26F680100096F5BC /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90141D6C26F680100096F5BC /* QuestionModel.swift */; };
 		90347D2826F58D5600B09138 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90347D2726F58D5600B09138 /* AppDelegate.swift */; };
-		90347D2A26F58D5600B09138 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90347D2926F58D5600B09138 /* SceneDelegate.swift */; };
-		90347D2C26F58D5600B09138 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90347D2B26F58D5600B09138 /* ViewController.swift */; };
 		90347D2F26F58D5600B09138 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90347D2D26F58D5600B09138 /* Main.storyboard */; };
 		90347D3226F58D5600B09138 /* perguntasRespostas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 90347D3026F58D5600B09138 /* perguntasRespostas.xcdatamodeld */; };
 		90347D3426F58D5E00B09138 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90347D3326F58D5E00B09138 /* Assets.xcassets */; };
 		90347D3726F58D5E00B09138 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90347D3526F58D5E00B09138 /* LaunchScreen.storyboard */; };
+		90347D4626F5965800B09138 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90347D4426F5965800B09138 /* QuestionsViewController.swift */; };
+		90347D4726F5965800B09138 /* QuestionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90347D4526F5965800B09138 /* QuestionsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		90141D6126F65F960096F5BC /* InicioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioViewController.swift; sourceTree = "<group>"; };
+		90141D6226F65F960096F5BC /* InicioViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InicioViewController.xib; sourceTree = "<group>"; };
+		90141D6726F67C2A0096F5BC /* RespostasCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RespostasCell.swift; sourceTree = "<group>"; };
+		90141D6826F67C2A0096F5BC /* RespostasCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RespostasCell.xib; sourceTree = "<group>"; };
+		90141D6C26F680100096F5BC /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
 		90347D2426F58D5600B09138 /* perguntasRespostas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = perguntasRespostas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90347D2726F58D5600B09138 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		90347D2926F58D5600B09138 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		90347D2B26F58D5600B09138 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		90347D2E26F58D5600B09138 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		90347D3126F58D5600B09138 /* perguntasRespostas.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = perguntasRespostas.xcdatamodel; sourceTree = "<group>"; };
 		90347D3326F58D5E00B09138 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90347D3626F58D5E00B09138 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		90347D3826F58D5E00B09138 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90347D4426F5965800B09138 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
+		90347D4526F5965800B09138 /* QuestionsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +49,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		90141D6026F65F6A0096F5BC /* Inicio */ = {
+			isa = PBXGroup;
+			children = (
+				90141D6126F65F960096F5BC /* InicioViewController.swift */,
+				90141D6226F65F960096F5BC /* InicioViewController.xib */,
+			);
+			path = Inicio;
+			sourceTree = "<group>";
+		};
+		90141D6526F67BC90096F5BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				90141D6626F67BD20096F5BC /* Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		90141D6626F67BD20096F5BC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				90141D6726F67C2A0096F5BC /* RespostasCell.swift */,
+				90141D6826F67C2A0096F5BC /* RespostasCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		90141D6B26F67FB90096F5BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				90141D6C26F680100096F5BC /* QuestionModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		90347D1B26F58D5600B09138 = {
 			isa = PBXGroup;
 			children = (
@@ -58,16 +102,59 @@
 		90347D2626F58D5600B09138 /* perguntasRespostas */ = {
 			isa = PBXGroup;
 			children = (
-				90347D2726F58D5600B09138 /* AppDelegate.swift */,
-				90347D2926F58D5600B09138 /* SceneDelegate.swift */,
-				90347D2B26F58D5600B09138 /* ViewController.swift */,
-				90347D2D26F58D5600B09138 /* Main.storyboard */,
-				90347D3326F58D5E00B09138 /* Assets.xcassets */,
-				90347D3526F58D5E00B09138 /* LaunchScreen.storyboard */,
-				90347D3826F58D5E00B09138 /* Info.plist */,
+				90347D3F26F58DC300B09138 /* Commoms */,
+				90347D3E26F58DC100B09138 /* Scenes */,
+				90347D4026F58DC500B09138 /* Sources */,
+				90347D4126F58DC700B09138 /* Resources */,
 				90347D3026F58D5600B09138 /* perguntasRespostas.xcdatamodeld */,
 			);
 			path = perguntasRespostas;
+			sourceTree = "<group>";
+		};
+		90347D3E26F58DC100B09138 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				90141D6026F65F6A0096F5BC /* Inicio */,
+				90347D4326F58E4D00B09138 /* Questions */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		90347D3F26F58DC300B09138 /* Commoms */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Commoms;
+			sourceTree = "<group>";
+		};
+		90347D4026F58DC500B09138 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				90347D2726F58D5600B09138 /* AppDelegate.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		90347D4126F58DC700B09138 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				90347D3526F58D5E00B09138 /* LaunchScreen.storyboard */,
+				90347D3326F58D5E00B09138 /* Assets.xcassets */,
+				90347D2D26F58D5600B09138 /* Main.storyboard */,
+				90347D3826F58D5E00B09138 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		90347D4326F58E4D00B09138 /* Questions */ = {
+			isa = PBXGroup;
+			children = (
+				90141D6B26F67FB90096F5BC /* Model */,
+				90347D4426F5965800B09138 /* QuestionsViewController.swift */,
+				90347D4526F5965800B09138 /* QuestionsViewController.xib */,
+				90141D6526F67BC90096F5BC /* View */,
+			);
+			path = Questions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +217,10 @@
 			files = (
 				90347D3726F58D5E00B09138 /* LaunchScreen.storyboard in Resources */,
 				90347D3426F58D5E00B09138 /* Assets.xcassets in Resources */,
+				90141D6A26F67C2A0096F5BC /* RespostasCell.xib in Resources */,
+				90347D4726F5965800B09138 /* QuestionsViewController.xib in Resources */,
 				90347D2F26F58D5600B09138 /* Main.storyboard in Resources */,
+				90141D6426F65F960096F5BC /* InicioViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,9 +232,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				90347D3226F58D5600B09138 /* perguntasRespostas.xcdatamodeld in Sources */,
-				90347D2C26F58D5600B09138 /* ViewController.swift in Sources */,
+				90141D6926F67C2A0096F5BC /* RespostasCell.swift in Sources */,
 				90347D2826F58D5600B09138 /* AppDelegate.swift in Sources */,
-				90347D2A26F58D5600B09138 /* SceneDelegate.swift in Sources */,
+				90141D6D26F680100096F5BC /* QuestionModel.swift in Sources */,
+				90347D4626F5965800B09138 /* QuestionsViewController.swift in Sources */,
+				90141D6326F65F960096F5BC /* InicioViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +382,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UYU42XWBK4;
-				INFOPLIST_FILE = perguntasRespostas/Info.plist;
+				INFOPLIST_FILE = perguntasRespostas/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,7 +391,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.aprendendo.perguntasRespostas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,7 +401,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UYU42XWBK4;
-				INFOPLIST_FILE = perguntasRespostas/Info.plist;
+				INFOPLIST_FILE = perguntasRespostas/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,7 +410,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.aprendendo.perguntasRespostas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
