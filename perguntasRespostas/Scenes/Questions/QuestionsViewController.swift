@@ -21,6 +21,7 @@ class QuestionsViewController: UIViewController, UITableViewDataSource, UITableV
     var questaoAtual: Int = 0
     var indexSelected: IndexPath?
     var score: Int = 0
+    var activeButton: Bool = false
     
     // MARKS: - Outlets & Actions
     
@@ -35,43 +36,45 @@ class QuestionsViewController: UIViewController, UITableViewDataSource, UITableV
         // Quando botao "Próxima pergunta" -> aumenta contador de questaoAtual e da um reload na tela. / Atualiza botao para "Responder"
         // Após responder última pergunta -> mostra botão Ver resultados
         // Botão ver resultados -> mostra a tela resultados
+        if activeButton {
+            
+            if buttonOutlet.currentTitle?.description == "Responder" {
+            
+                checkAnswers()
+            
+                buttonOutlet.setTitle("Próxima pergunta", for: UIControl.State.normal)
+            
+                if questaoAtual == arrayQuestions.count - 1 { // Se for a última pergunta, configurar botão para ver resultados
+                
+                    buttonOutlet.setTitle("Ver Resultado", for: UIControl.State.normal)
+            
+                }
         
-        if buttonOutlet.currentTitle?.description == "Responder" {
-            
-            checkAnswers()
-            
-            buttonOutlet.setTitle("Próxima pergunta", for: UIControl.State.normal)
-            
-            if questaoAtual == arrayQuestions.count - 1 { // Se for a última pergunta, configurar botão para ver resultados
-                
-            buttonOutlet.setTitle("Ver Resultado", for: UIControl.State.normal)
-            
-                
             }
-        
-        }
-        else if buttonOutlet.currentTitle?.description == "Próxima pergunta"{
+            else if buttonOutlet.currentTitle?.description == "Próxima pergunta"{
             
-            questaoAtual += 1
-            buttonOutlet.setTitle("Responder", for: UIControl.State.normal)
-            setupUI()
-             // mostrar
-        }
-        else if buttonOutlet.currentTitle?.description == "Ver Resultado" {// MOSTRAR A TELA DE RESULTADO
-            questaoAtual = 0
+                questaoAtual += 1
+                
+                setupUI()
+            
+            }
+            else if buttonOutlet.currentTitle?.description == "Ver Resultado" {// MOSTRAR A TELA DE RESULTADO
+                questaoAtual = 0
+                let viewController = InicioViewController()
+                navigationController?.pushViewController(viewController, animated: true)
+                }
+        }else{//Botão desativado
         }
     }
-
     // MARKS:  - Overrides
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        score = 0
+        nota.shared.scoreAtual = 0
         questaoAtual = 0
         self.tableView.delegate = self
-        buttonOutlet.setTitle("Responder", for: UIControl.State.normal)
         setupUI()
 
     }
@@ -80,6 +83,9 @@ class QuestionsViewController: UIViewController, UITableViewDataSource, UITableV
     
     func setupUI() {
         
+        buttonOutlet.setTitle("Responder", for: UIControl.State.normal)
+        buttonOutlet.backgroundColor = UIColor.gray.withAlphaComponent(0.4)
+        activeButton = false
         questionLabel.text = arrayQuestions[questaoAtual].question
         tableView.register(UINib(nibName: "RespostasCell", bundle: nil), forCellReuseIdentifier: "RespostasCell")
         tableView.dataSource = self
@@ -107,7 +113,9 @@ class QuestionsViewController: UIViewController, UITableViewDataSource, UITableV
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         indexSelected = indexPath
-        // pintar / acionar botao resposta
+        activeButton = true
+        buttonOutlet.backgroundColor = UIColor(red: 98/255, green: 115/255, blue: 255, alpha: 1)
+
     }
     func checkAnswers() {
         guard let indexSelected = indexSelected else {return print("Caiu no return")}
@@ -123,16 +131,18 @@ class QuestionsViewController: UIViewController, UITableViewDataSource, UITableV
             cellSelected.setStyle(.incorrect)
         }
         if indexSelected.row == arrayQuestions[questaoAtual].respostaCorreta {
-            score += 1
-            print(score)
-            
-        }
-        func update() {
-            
-           
+            nota.shared.scoreAtual += 1
             
             
         }
         
-    }
+        }
+    
+    
+            
+         
+        
+         
+        
+    
 }

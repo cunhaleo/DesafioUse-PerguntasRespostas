@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InicioViewController" customModule="perguntasRespostas" customModuleProvider="target">
             <connections>
+                <outlet property="buttonOutlet" destination="7HA-2Q-GQb" id="OTr-fV-uaK"/>
+                <outlet property="scoreLabel" destination="TM6-un-O8E" id="cy7-eb-VHy"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -41,7 +43,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TM6-un-O8E">
-                            <rect key="frame" x="56" y="72" width="37" height="21"/>
+                            <rect key="frame" x="126" y="89" width="37" height="21"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>

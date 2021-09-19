@@ -14,7 +14,13 @@ struct QuestionModel {
     let respostas: [String]
     let respostaCorreta: Int
     
+}
+class nota {
+ 
+    var scoreAtual: Int = 0
+    var showStartScreen: Bool = true
     
+static var shared = nota()
     
 }
 

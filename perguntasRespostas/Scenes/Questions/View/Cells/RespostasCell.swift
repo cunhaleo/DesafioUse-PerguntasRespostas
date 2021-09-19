@@ -33,10 +33,12 @@ class RespostasCell: UITableViewCell {
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
-
-        cellStyle = selected ? .selected : .blank
-        setStyle(cellStyle)
-
+    
+        if viewBackground.backgroundColor != UIColor.green.withAlphaComponent(0.1) && viewBackground.backgroundColor != UIColor.red.withAlphaComponent(0.1){
+            
+            cellStyle = selected ? .selected : .blank
+            setStyle(cellStyle)
+        }
     }
     
     // MARKS: - Methods
@@ -65,12 +67,14 @@ class RespostasCell: UITableViewCell {
             cellLabel.textColor = UIColor(red: 98/255, green: 115/255, blue: 255, alpha: 1)
             
         case .correct:
-            viewBackground.backgroundColor = UIColor.green.withAlphaComponent(0.2)
+            viewBackground.backgroundColor = UIColor.green.withAlphaComponent(0.1)
             viewBackground.layer.borderColor = UIColor.green.withAlphaComponent(0.8).cgColor
+            cellLabel.textColor = UIColor(red: 56/255, green: 197/255, blue: 61/195, alpha: 1)
             
         case .incorrect:
-            viewBackground.backgroundColor = UIColor.red.withAlphaComponent(0.2)
+            viewBackground.backgroundColor = UIColor.red.withAlphaComponent(0.1)
             viewBackground.layer.borderColor = UIColor.red.withAlphaComponent(0.8).cgColor
+            cellLabel.textColor = UIColor(red: 255/255, green: 90/255, blue: 90/255, alpha: 1)
         }
         
     }
