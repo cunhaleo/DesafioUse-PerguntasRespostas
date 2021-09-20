@@ -19,6 +19,7 @@ class nota {
  
     var scoreAtual: Int = 0
     var showStartScreen: Bool = true
+    var numberOfQuestions: Int = 0
     
 static var shared = nota()
     

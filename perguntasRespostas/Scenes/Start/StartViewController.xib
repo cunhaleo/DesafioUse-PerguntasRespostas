@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StartViewController" customModule="perguntasRespostas" customModuleProvider="target">
+            <connections>
+                <outlet property="botaoDeOutlet" destination="iO1-xO-UIe" id="DmM-2b-F0o"/>
+                <outlet property="scoreLabel" destination="0Se-Pt-Uxc" id="Jf8-iW-lEE"/>
+                <outlet property="textLabel" destination="F2K-05-UNP" id="tYR-be-Kr2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewOutlet" destination="PoI-rS-7Xh" id="oji-xg-wQZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PoI-rS-7Xh">
+                    <rect key="frame" x="30" y="244" width="354" height="174"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2K-05-UNP">
+                            <rect key="frame" x="10" y="45.5" width="334" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Se-Pt-Uxc">
+                            <rect key="frame" x="20" y="83.5" width="314" height="25.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iO1-xO-UIe">
+                            <rect key="frame" x="20" y="124" width="314" height="30"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="botaoDeStart:" destination="-1" eventType="touchUpInside" id="7lA-Yu-UnW"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Perguntas e Respostas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ms-L7-W3C">
+                            <rect key="frame" x="15" y="10" width="324" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                            <color key="textColor" red="0.40784313729999999" green="0.48627450979999998" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="200" id="3LN-Xn-KeO"/>
+                        <constraint firstAttribute="bottom" secondItem="iO1-xO-UIe" secondAttribute="bottom" constant="20" id="7DI-xN-BI9"/>
+                        <constraint firstAttribute="trailing" secondItem="6ms-L7-W3C" secondAttribute="trailing" constant="15" id="JAM-W6-tTf"/>
+                        <constraint firstAttribute="trailing" secondItem="F2K-05-UNP" secondAttribute="trailing" constant="10" id="OO7-zv-NDz"/>
+                        <constraint firstItem="iO1-xO-UIe" firstAttribute="top" secondItem="0Se-Pt-Uxc" secondAttribute="bottom" constant="15" id="TuU-q3-ZMG"/>
+                        <constraint firstItem="F2K-05-UNP" firstAttribute="leading" secondItem="PoI-rS-7Xh" secondAttribute="leading" constant="10" id="WQ8-uV-DeB"/>
+                        <constraint firstAttribute="trailing" secondItem="iO1-xO-UIe" secondAttribute="trailing" constant="20" id="Ymx-eR-mfB"/>
+                        <constraint firstItem="6ms-L7-W3C" firstAttribute="leading" secondItem="PoI-rS-7Xh" secondAttribute="leading" constant="15" id="a8D-Sf-jCa"/>
+                        <constraint firstItem="0Se-Pt-Uxc" firstAttribute="leading" secondItem="PoI-rS-7Xh" secondAttribute="leading" constant="20" id="ae6-Vn-z7O"/>
+                        <constraint firstAttribute="trailing" secondItem="0Se-Pt-Uxc" secondAttribute="trailing" constant="20" id="cXA-jo-qQ2"/>
+                        <constraint firstItem="F2K-05-UNP" firstAttribute="top" secondItem="6ms-L7-W3C" secondAttribute="bottom" constant="15" id="d9n-5o-HEq"/>
+                        <constraint firstItem="0Se-Pt-Uxc" firstAttribute="top" secondItem="F2K-05-UNP" secondAttribute="bottom" constant="20" id="oXh-vn-4EU"/>
+                        <constraint firstItem="6ms-L7-W3C" firstAttribute="top" secondItem="PoI-rS-7Xh" secondAttribute="top" constant="10" id="pZK-dT-Cuz"/>
+                        <constraint firstItem="iO1-xO-UIe" firstAttribute="leading" secondItem="PoI-rS-7Xh" secondAttribute="leading" constant="20" id="wUa-aC-sJZ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.8980392157" green="0.91372549020000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="PoI-rS-7Xh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="C8I-3D-uE2"/>
+                <constraint firstItem="PoI-rS-7Xh" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="200" id="eHf-fd-JOn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="PoI-rS-7Xh" secondAttribute="trailing" constant="30" id="zGe-4p-IWM"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="124.55357142857142"/>
+        </view>
+    </objects>
+</document>

@@ -41,7 +41,7 @@ class QuestionsViewController: UIViewController, UITableViewDataSource, UITableV
             if buttonOutlet.currentTitle?.description == "Responder" {
             
                 checkAnswers()
-            
+                nota.shared.showStartScreen = true
                 buttonOutlet.setTitle("Próxima pergunta", for: UIControl.State.normal)
             
                 if questaoAtual == arrayQuestions.count - 1 { // Se for a última pergunta, configurar botão para ver resultados
@@ -60,7 +60,8 @@ class QuestionsViewController: UIViewController, UITableViewDataSource, UITableV
             }
             else if buttonOutlet.currentTitle?.description == "Ver Resultado" {// MOSTRAR A TELA DE RESULTADO
                 questaoAtual = 0
-                let viewController = InicioViewController()
+                nota.shared.showStartScreen = false
+                let viewController = StartViewController()
                 navigationController?.pushViewController(viewController, animated: true)
                 }
         }else{//Botão desativado
@@ -77,6 +78,10 @@ class QuestionsViewController: UIViewController, UITableViewDataSource, UITableV
         self.tableView.delegate = self
         setupUI()
 
+        
+
+        
+        
     }
     
     // MARKS : - Methods
@@ -90,6 +95,7 @@ class QuestionsViewController: UIViewController, UITableViewDataSource, UITableV
         tableView.register(UINib(nibName: "RespostasCell", bundle: nil), forCellReuseIdentifier: "RespostasCell")
         tableView.dataSource = self
         tableView.reloadData()
+        buttonOutlet.layer.cornerRadius = 18
         
     }
     
@@ -118,7 +124,7 @@ class QuestionsViewController: UIViewController, UITableViewDataSource, UITableV
 
     }
     func checkAnswers() {
-        guard let indexSelected = indexSelected else {return print("Caiu no return")}
+        guard let indexSelected = indexSelected else {return print("nao passou pelo index selected")}
         
         let indexPathCorrect = IndexPath(row: arrayQuestions[questaoAtual].respostaCorreta, section: 0)
                 
@@ -137,12 +143,5 @@ class QuestionsViewController: UIViewController, UITableViewDataSource, UITableV
         }
         
         }
-    
-    
-            
-         
-        
-         
-        
-    
+
 }
