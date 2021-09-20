@@ -24,17 +24,28 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3GO-D1-zDR">
                     <rect key="frame" x="0.0" y="44" width="414" height="200"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYJ-5A-e80">
-                            <rect key="frame" x="8" y="17" width="398" height="153"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYJ-5A-e80">
+                            <rect key="frame" x="8" y="15" width="398" height="155.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Respostas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfi-kF-PkV">
+                            <rect key="frame" x="8" y="171.5" width="80" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.45882352939999999" green="0.54901960780000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <constraints>
+                        <constraint firstAttribute="trailing" secondItem="gYJ-5A-e80" secondAttribute="trailing" constant="8" id="6Sr-a9-JD0"/>
+                        <constraint firstItem="gYJ-5A-e80" firstAttribute="leading" secondItem="3GO-D1-zDR" secondAttribute="leading" constant="8" id="E41-1g-FrG"/>
+                        <constraint firstItem="dfi-kF-PkV" firstAttribute="top" secondItem="gYJ-5A-e80" secondAttribute="bottom" constant="1" id="P60-37-J6J"/>
+                        <constraint firstItem="gYJ-5A-e80" firstAttribute="top" secondItem="3GO-D1-zDR" secondAttribute="top" constant="15" id="S9D-hQ-xj4"/>
                         <constraint firstAttribute="height" constant="200" id="SYI-yE-EgJ"/>
+                        <constraint firstAttribute="bottom" secondItem="dfi-kF-PkV" secondAttribute="bottom" constant="8" id="aZa-KI-AdF"/>
+                        <constraint firstItem="dfi-kF-PkV" firstAttribute="leading" secondItem="3GO-D1-zDR" secondAttribute="leading" constant="8" id="eME-Rx-Nzw"/>
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufw-im-8Fs">

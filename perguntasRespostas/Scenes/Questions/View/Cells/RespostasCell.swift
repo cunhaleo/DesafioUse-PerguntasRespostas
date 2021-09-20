@@ -25,6 +25,11 @@ class RespostasCell: UITableViewCell {
     
     @IBOutlet weak var viewBackground: UIView!
     
+    @IBOutlet weak var correctMark: UIImageView!
+    
+    @IBOutlet weak var incorrectMark: UIImageView!
+    
+    
     // MARKS: - Overrides
     
     override func awakeFromNib() {
@@ -60,21 +65,31 @@ class RespostasCell: UITableViewCell {
             viewBackground.backgroundColor = .white
             viewBackground.layer.borderColor = UIColor.gray.withAlphaComponent(0.4).cgColor
             cellLabel.textColor = .black
+            incorrectMark.isHidden = true
+            correctMark.isHidden = true
+
             
         case .selected:
             viewBackground.backgroundColor = UIColor(red: 98/255, green: 115/255, blue: 255, alpha: 0.1)
             viewBackground.layer.borderColor = UIColor(red: 98/255, green: 115/255, blue: 255, alpha: 1).cgColor
             cellLabel.textColor = UIColor(red: 98/255, green: 115/255, blue: 255, alpha: 1)
+            incorrectMark.isHidden = true
+            correctMark.isHidden = true
             
         case .correct:
             viewBackground.backgroundColor = UIColor.green.withAlphaComponent(0.1)
             viewBackground.layer.borderColor = UIColor.green.withAlphaComponent(0.8).cgColor
             cellLabel.textColor = UIColor(red: 56/255, green: 197/255, blue: 61/195, alpha: 1)
+            incorrectMark.isHidden = true
+            correctMark.isHidden = false
             
         case .incorrect:
             viewBackground.backgroundColor = UIColor.red.withAlphaComponent(0.1)
             viewBackground.layer.borderColor = UIColor.red.withAlphaComponent(0.8).cgColor
             cellLabel.textColor = UIColor(red: 255/255, green: 90/255, blue: 90/255, alpha: 1)
+            incorrectMark.isHidden = false
+            correctMark.isHidden = true
+            
         }
         
     }
